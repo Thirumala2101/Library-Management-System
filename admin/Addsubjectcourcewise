@@ -1,0 +1,48 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Addsubjectcourcewise.aspx.cs" Inherits="admin_Addsubjectcourcewise" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <table  style="margin-left:50px; bgcolor:#98AFC7; align:center; box-shadow: 10px 10px 10px 10px  #888888">
+    <tr>
+        <td >
+            <asp:Label ID="Label2" runat="server" Text="BookName" Font-Bold="True"></asp:Label>
+        </td>
+        <td style="width: 155px">
+            <asp:TextBox ID="TextBox5" runat="server" 
+                                    AutoPostBack="True" 
+                ontextchanged="TextBox5_TextChanged"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <strong>Course</strong></td>
+        <td style="width: 155px" >
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>Select</asp:ListItem>
+                <asp:ListItem>CME</asp:ListItem>
+                <asp:ListItem>ECE</asp:ListItem>
+                <asp:ListItem>EEE</asp:ListItem>
+                <asp:ListItem>CIVIL</asp:ListItem>
+                <asp:ListItem>MECH</asp:ListItem>
+            </asp:DropDownList>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            &nbsp;</td>
+        <td style="width: 155px; height: 26px">
+            <asp:Button ID="Button1" runat="server" style="text-align: center" 
+                    Text="Submit" onclick="Button1_Click1" Font-Bold="True" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+    </tr>
+    <tr>
+        <td >
+            &nbsp;</td>
+        <td style="width: 155px; height: 26px">
+            <asp:Label ID="lblmsg" runat="server"></asp:Label>
+                </td>
+    </tr>
+</table>
+</asp:Content>
+
