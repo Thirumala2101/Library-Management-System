@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>my website</title>
+      
+    <link href="StyleSheet.css" type="text/css" rel="Stylesheet" />
+   <link href="styles.css" type="text/css" rel="Stylesheet" />
+   <link href="GridviewStyleSheet2.css" type="text/css" rel="Stylesheet" />
+    <style type="text/css">
+
+        .style9
+        {
+            font-size: x-large;
+        }
+        .style5
+        {<a href="AdminMasterPage.master">AdminMasterPage.master</a>
+            font-size: medium;
+        }
+        .style10
+        {
+            color: #FF0000;
+        }
+        .style14
+        {
+            font-size: large;
+        }
+        .logout
+        {
+            float:right;
+            margin-right:0px;
+        }
+        
+        .MyCalendar .ajax__calendar_container {
+    border:1px solid #646464;
+    background-color: lemonchiffon;
+    color: red;
+}
+        .style15
+        {
+            text-align: left;
+        }
+    </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager runat="server">
+    </ajaxToolkit:ToolkitScriptManager>
+
+    <div  id="wrapper">
+       <%-- <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </ajaxToolkit:ToolkitScriptManager>--%>
+        <div id="banner" class="style15">
+          
+
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+
+
+        <img src="../images/logo.jpg" align="left" 
+                style="height: 101px; width: 155px; margin-top: 0px;" /><center><span class="style9"><strong>VEMUGANTI MANOHAR RAO POLYTECHNIC, RAMPUR</strong></span></center>
+             <span class="style14"><center> LIBRARY MANAGEMENT SYSTEM</span><br class="style5" /></center>
+            <span class="style5"><center> Hanmakonda, Warangal 506151, Telangana, INDIA.</span><br class="style5" /></center>
+            <br class="style5" />
+           </div>
+            <div class="logout">
+            <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" 
+                onclick="LinkButton1_Click1" CausesValidation="False" >LogOut</asp:LinkButton></span><span class="style10"><br class="style5" /></span>
+            </div>
+
+    <div id='cssmenu'>
+    <ul>
+        <li class='active'><a href="AdminHome.aspx"><span>Home</span></a></li>
+        <li class='has-sub'><a href='#'><span>Student</span></a>
+        <ul>
+            <li class='has-sub'><a href="StudentRegistration.aspx"><span>Registration</span></a></li>
+            <li class='has-sub'><a href="StudentUpdates.aspx"><span>Update</span></a></li>
+            <li class='has-sub'><a href="StudentDelete.aspx"><span>Delete</span></a></li>
+            <li class='has-sub'><a href="GetStudentsdetails.aspx"><span>Get student details</span></a></li >
+            </ul>
+            </li>
+            <li class='has-sub'><a href='#'><span>Faculty</span></a>
+        <ul>
+            <li class='has-sub'><a href="FacultyReg.aspx"><span>Registration</span></a></li>
+            <li class='has-sub'><a href="FacultyUpdate.aspx"><span>Update</span></a></li>
+            <li class='has-sub'><a href="FacultyDelete.aspx"><span>Delete</span></a></li>
+            <li class='has-sub'><a href="FacultyGetDetails.aspx"><span>Get Faculty details</span></a></li >
+            </ul>
+            </li>
+
+             
+   
+   <li class='has-sub'><a href='#'><span>Books</span></a>
+   <ul>
+            <li class='has-sub'><a href="AddBook.aspx"><span>Add Book</span></a></li>
+            <li class='has-sub'><a href="BookUpdate.aspx"><span>Update Book</span></a></li>
+            <li class='has-sub'><a href="BookDelete.aspx"><span>Delete Book</span></a></li>
+            <li class='has-sub'><a href="GetBookdetails.aspx"><span>SeeBook Details</span></a></li>
+            <li class='has-sub'><a href="SearchBook.aspx"><span>SearchBook</span></a></li>
+           <%--  <li class='has-sub'><a href="Addsubjectcourcewise.aspx"><span>Add Subjects Cource Wise</span></a></li>--%>
+
+   </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>IssueBook</span></a>
+   <ul>
+            <li class='has-sub'><a href="IssueStudentBook.aspx"><span>Student Book</span></a></li>
+            <li class='has-sub'><a href="FacultyIssueBook.aspx"><span>Faculty Book</span></a></li>
+            <li class='has-sub'><a href="IssueRefferenceBook.aspx"><span>Refference Book</span></a></li>
+   </ul>
+   </li>
+
+   <li class='has-sub'><a href='#'><span>Book Bank</span></a>
+   <ul>
+            <li class='has-sub'><a href="BookBankStdReg.aspx"><span>Student Registration</span></a></li>
+            <li class='has-sub'><a href="BookBankIssueBook.aspx"><span>Issue Book</span></a></li>
+            <li class='has-sub'><a href="BookBankstudentReturnBook.aspx"><span>Return Book</span></a></li>
+   </ul>
+   </li>
+
+
+
+   <li class='has-sub'><a href='#'><span>ReturnBook</span></a>
+   <ul>
+            <li class='has-sub'><a href="studentreturnbook.aspx"><span>Student Return Book</span></a></li>
+            <li class='has-sub'><a href="facultyreturnbook.aspx"><span>Faculty Return Book</span></a></li>
+             <li class='has-sub'><a href="ReturnRefferncebook.aspx"><span> Return Book Of Refference</span></a></li>
+   </ul>
+   </li>
+   <li class='has-sub'><a href="libraryreference.aspx"><span>LIBRARY Reference</span></a></li>
+  
+     <li class='has-sub'><a href='#'><span>Help</span></a>
+     <ul>
+            <li class='has-sub'><a href="HelpChangePassword.aspx"><span>Change Password</span></a></li>
+            <li class='has-sub'><a href="ViewBookBankStudents.aspx"><span>ViewBookBankStudents</span></a></li>
+
+            
+     </ul>
+     </li>
+</ul>
+</div>
+
+<div>
+
+<div id="content_area">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+            
+        </asp:ContentPlaceHolder>
+</div>
+
+
+    <div id="sidebar">
+    
+        <br />
+     </div>
+    </div>
+   <div id="footer">
+   <center>
+   <p class="style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All Rights Reserved</p>
+   </center>
+   </div>
+
+   </div>
+
+    </form>  
+</body>
+</html>
