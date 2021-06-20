@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>my website</title>
+      
+    <link href="StyleSheet.css" type="text/css" rel="Stylesheet" />
+   <link href="styles.css" type="text/css" rel="Stylesheet" />
+
+    <style type="text/css">
+
+        .style9
+        {
+            font-size: x-large;
+        }
+        .style5
+        {
+            font-size: medium;
+        }
+        .style14
+        {
+            font-size: large;
+        }
+        </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div  id="wrapper">
+        <div id="banner" align="left">
+
+            <img src="images/logo.jpg" align="left" style="height: 112px; width: 155px" />&nbsp;
+
+
+
+            <span class="style9"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VEMUGANTI MANOHAR RAO POLYTECHNIC, RAMPUR</strong></span><br />
+             <span class="style14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIBRARY MANAGEMENT SYSTEM<br />
+            <span class="style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hanmakonda, Warangal, 506151, Telangana, INDIA.</span></span><br class="style5" />
+            <span class="style5">.</span><br class="style5" />
+           
+                </div>
+
+    <div id='cssmenu'>
+    <ul>
+        <li class='active'><a href="home.aspx"><span>Home</span></a></li>
+        <li class='has-sub'><a href='admin.aspx'><span>Librarian</span></a></li>
+        <li class='has-sub'><a href='student.aspx'><span>Student</span></a></li>
+        <li class='has-sub'><a href='faculty.aspx'><span>Faculty</span></a></li>
+        </ul>
+</div>
+
+<div>
+
+<div id="content_area">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+            
+        </asp:ContentPlaceHolder>
+</div>
+
+
+    <div id="sidebar">
+    
+        <br />
+        </div>
+    </div>
+   <div id="footer">
+   <p style="text-align: center">All Rights Reserved</p>
+   </div>
+
+   </div>
+
+    </form>  
+</body>
+</html>
