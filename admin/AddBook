@@ -1,0 +1,274 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="AddBook.aspx.cs" Inherits="admin_FacultyReg" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table style="width:60%;  bgcolor:#98AFC7; box-shadow: 10px 10px 10px 10px  #888888; height: 279px; margin-left: 241px;" >
+        <tr>
+            <td style="text-align: right; width: 182px;">
+                <asp:Label ID="Label12" runat="server" Text="BookID" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+            <td style="text-align: left">
+                <asp:TextBox ID="TextBox2" runat="server" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                    ControlToValidate="TextBox2" ErrorMessage="*"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 26px; text-align: right; width: 182px;">
+                <asp:Label ID="Label13" runat="server" Text="Name" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+            <td style="height: 26px; text-align: left;">
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+<center>
+        <tr>
+            <td style="height: 23px; text-align: right; width: 182px;">
+                <asp:Label ID="Label14" runat="server" Text="Edition" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+    </center>
+            <td style="height: 23px; text-align: left;">
+                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+<center>
+<center>
+        <tr>
+            <td style="text-align: right; width: 182px;">
+                <asp:Label ID="Label16" runat="server" Text="Author" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+    </center>
+            <td style="text-align: left">
+                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="text-align: right; width: 182px;">
+                <asp:Label ID="Label17" runat="server" Text="NoofPages" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+    </center>
+            <td style="text-align: left">
+                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+<center>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="height: 23px; text-align: right; width: 182px;">
+                <asp:Label ID="Label18" runat="server" Text="Year" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+    </center>
+            <td style="height: 23px; text-align: left;">
+                <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+<center>
+<center>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="text-align: right; width: 182px;">
+                <asp:Label ID="Label19" runat="server" Text="Source" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+            </td>
+    </center>
+            <td style="text-align: left">
+                <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="height: 23px; text-align: right; width: 182px;">
+                <asp:Label ID="Label20" runat="server" Text="Cost" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+                </td>
+    </center>
+            <td style="height: 23px; text-align: left;">
+                <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                </td>
+        </tr>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="height: 23px; text-align: right; width: 182px;">
+                <asp:Label ID="Label21" runat="server" Text="InsertDate" Font-Bold="True" 
+                    ForeColor="Blue"></asp:Label>
+                </td>
+    </center>
+            <td style="height: 23px; text-align: left;">
+                <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                </td>
+        </tr>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+    </center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="height: 23px; text-align: right; width: 182px;">
+                &nbsp;</td>
+            <td style="height: 23px; text-align: left;">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 182px">
+                &nbsp;</td>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+            <td>
+                <asp:Button ID="Button1" runat="server" Text="Save" onclick="Button1_Click" 
+                    Font-Bold="True" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button2" runat="server" Text="Cancel" Font-Bold="True" 
+                    Width="55px" />
+            </td>
+        </tr>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+<center>
+        <tr>
+            <td style="height: 26px; text-align: right; width: 182px;">
+                &nbsp;</td>
+            <td style="height: 26px; text-align: left;">
+                <asp:Label ID="lblmsg" runat="server"></asp:Label>
+            </td>
+        </tr>
+        </table>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+    </center>
+</asp:Content>
+
